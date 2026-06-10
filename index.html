@@ -307,15 +307,83 @@
   </div>
 </section>
 
-<!-- FOOTER / CALL TO ACTION -->
-<section class="section-cta" id="kontakt">
-  <div class="container narrow-center">
-    <h2>Wir freuen uns auf Ihre Kontaktaufnahme.</h2>
-    <p>Sie möchten Unterstützung anfragen oder eine Zusammenarbeit besprechen?</p>
-    <div class="cta-buttons">
-      <a href="mailto:info@aufwind-familienhilfen.de" class="btn btn-magenta">Termin anfragen</a>
-      <a href="mailto:info@aufwind-familienhilfen.de" class="btn btn-outline-navy">Kooperation besprechen</a>
+<!-- KONTAKT / FORMULAR -->
+<section class="section-kontakt" id="kontakt">
+  <div class="container kontakt-layout">
+
+    <div class="kontakt-intro">
+      <p class="section-eyebrow">KONTAKT</p>
+      <h2>Wir freuen uns auf Ihre Nachricht.</h2>
+      <p>Sie möchten einen Termin anfragen, mehr über unsere Angebote erfahren oder eine Zusammenarbeit besprechen? Schreiben Sie uns – wir melden uns zeitnah bei Ihnen.</p>
+      <div class="kontakt-info">
+        <div class="kontakt-info-item">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>0123 4567890</span>
+        </div>
+        <div class="kontakt-info-item">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>info@aufwind-familienhilfen.de</span>
+        </div>
+      </div>
     </div>
+
+    <div class="kontakt-form-wrap">
+      <!-- Web3Forms: Kostenlosen API-Key anfordern auf web3forms.com -->
+      <form class="kontakt-form" action="https://api.web3forms.com/submit" method="POST" id="kontaktFormular">
+        <!-- API Key hier eintragen (von web3forms.com) -->
+        <input type="hidden" name="access_key" value="DEIN-API-KEY-HIER">
+        <input type="hidden" name="subject" value="Neue Anfrage über aufwind-familienhilfen.de">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+        <div class="form-row form-row-2">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+          </div>
+        </div>
+
+        <div class="form-row form-row-2">
+          <div class="form-group">
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="Optional">
+          </div>
+          <div class="form-group">
+            <label for="betreff">Betreff *</label>
+            <select id="betreff" name="betreff" required>
+              <option value="" disabled selected>Bitte wählen …</option>
+              <option value="Termin anfragen">Termin anfragen</option>
+              <option value="Kooperation / Jugendamt">Kooperation / Jugendamt</option>
+              <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="nachricht">Nachricht *</label>
+          <textarea id="nachricht" name="nachricht" rows="5" placeholder="Wie können wir Ihnen helfen?" required></textarea>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="datenschutz" name="datenschutz" required>
+          <label for="datenschutz">Ich habe die <a href="#" class="form-link">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+        </div>
+
+        <button type="submit" class="btn btn-magenta form-submit">
+          Nachricht senden
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen.
+        </div>
+      </form>
+    </div>
+
   </div>
 </section>
 
