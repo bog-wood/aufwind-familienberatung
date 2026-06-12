@@ -12,17 +12,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
 <!-- HEADER / NAV -->
 <header class="header">
   <div class="container nav-inner">
     <div class="logo">
-      <a href="index.html" style="display:flex;align-items:baseline;gap:2px;text-decoration:none;">
-        <span class="logo-aufwind">Aufwind</span><span class="logo-dot">.</span>
+      <a href="index.html">
+        <img src="logo_kurz.png" alt="Aufwind – Systemische Familienhilfen" class="logo-img">
       </a>
-      <span class="logo-sub">Systemische Familienhilfen</span>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <a href="angebote.html" class="nav-active">Angebote</a>
       <a href="ueber-uns.html">Über uns</a>
       <a href="ibt.html">iBT</a>
@@ -30,11 +30,13 @@
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <a href="kontakt.html" class="btn btn-orange nav-cta">Termin anfragen</a>
-    <button class="burger" aria-label="Menü öffnen">
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<main id="main-content">
 
 <!-- PAGE HERO -->
 <section class="page-hero angebote-hero">
@@ -82,7 +84,7 @@
 
       <a href="#familienberatung" class="leistung-overview-card">
         <div class="leistung-overview-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3>Systemische Familienberatung</h3>
         <p>Begleitung des gesamten Familiensystems – gemeinsam neue Perspektiven entwickeln.</p>
@@ -91,7 +93,7 @@
 
       <a href="#erziehungsberatung" class="leistung-overview-card">
         <div class="leistung-overview-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <h3>Erziehungsberatung &amp; Elternbegleitung</h3>
         <p>Stärkung elterlicher Kompetenzen und Unterstützung im Erziehungsalltag.</p>
@@ -100,7 +102,7 @@
 
       <a href="#krisenbegleitung" class="leistung-overview-card">
         <div class="leistung-overview-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Krisenbegleitung</h3>
         <p>Stabilisierende Begleitung in akuten Belastungssituationen und Krisen.</p>
@@ -109,7 +111,7 @@
 
       <a href="#kinder-jugendliche" class="leistung-overview-card">
         <div class="leistung-overview-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
         </div>
         <h3>Begleitung von Kindern &amp; Jugendlichen</h3>
         <p>Individuelle Unterstützung für junge Menschen in schwierigen Lebensphasen.</p>
@@ -118,7 +120,7 @@
 
       <a href="#trennung" class="leistung-overview-card">
         <div class="leistung-overview-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
         <h3>Trennungs- &amp; Scheidungsbegleitung</h3>
         <p>Unterstützung für Familien in und nach Trennungsprozessen.</p>
@@ -127,7 +129,7 @@
 
       <a href="#aufsuchend" class="leistung-overview-card">
         <div class="leistung-overview-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
         <h3>Aufsuchende Familienarbeit</h3>
         <p>Begleitung im vertrauten Lebensumfeld – alltagsnah und niedrigschwellig.</p>
@@ -338,28 +340,28 @@
     <div class="zielgruppen-grid">
       <div class="zielgruppe-card">
         <div class="zielgruppe-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3>Familien</h3>
         <p>Familien in allen Konstellationen – ob Kernfamilie, Alleinerziehend, Patchwork oder Regenbogenfamilie. Jede Familie ist willkommen.</p>
       </div>
       <div class="zielgruppe-card">
         <div class="zielgruppe-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
         </div>
         <h3>Eltern</h3>
         <p>Mütter und Väter, die Orientierung im Erziehungsalltag suchen, ihre Beziehung zu ihren Kindern stärken oder sich in schwierigen Phasen begleiten lassen möchten.</p>
       </div>
       <div class="zielgruppe-card">
         <div class="zielgruppe-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7 7 0 0113 0"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7 7 0 0113 0"/></svg>
         </div>
         <h3>Kinder &amp; Jugendliche</h3>
         <p>Junge Menschen zwischen 4 und 18 Jahren, die Unterstützung bei emotionalen, sozialen oder entwicklungsbezogenen Themen brauchen.</p>
       </div>
       <div class="zielgruppe-card">
         <div class="zielgruppe-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
         <h3>Paare &amp; Trennungspaare</h3>
         <p>Paare, die ihre Beziehung stärken möchten, sowie Eltern in Trennungsprozessen, die ihre Co-Elternschaft gestalten wollen.</p>
@@ -453,15 +455,19 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <span class="logo-aufwind logo-white">Aufwind</span><span class="logo-dot logo-orange-dot">.</span>
+        <img src="logo_aufwind.png" alt="Aufwind – Systemische Familienhilfen" class="footer-logo-img">
       </div>
-      <p>Systemische Familienhilfen</p>
-      <p>Musterstraße 12 · 12345 Musterstadt</p>
+    </div>
+    <div class="footer-address">
+      <p>Musterstraße 12</p>
+      <p>12345 Musterstadt</p>
     </div>
     <div class="footer-contact">
       <p>📞 0123 4567890</p>
@@ -478,15 +484,16 @@
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.main-nav');
   burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-open');
+    const isOpen = nav.classList.toggle('nav-open');
     burger.classList.toggle('burger-open');
+    burger.setAttribute('aria-expanded', isOpen);
   });
 </script>
 
 
 <!-- SCROLL TO TOP -->
 <button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
-  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
 <script>

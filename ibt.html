@@ -12,17 +12,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
 <!-- HEADER / NAV -->
 <header class="header">
   <div class="container nav-inner">
     <div class="logo">
-      <a href="index.html" style="display:flex;align-items:baseline;gap:2px;text-decoration:none;">
-        <span class="logo-aufwind">Aufwind</span><span class="logo-dot">.</span>
+      <a href="index.html">
+        <img src="logo_kurz.png" alt="Aufwind – Systemische Familienhilfen" class="logo-img">
       </a>
-      <span class="logo-sub">Systemische Familienhilfen</span>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <a href="angebote.html">Angebote</a>
       <a href="ueber-uns.html">Über uns</a>
       <a href="ibt.html" class="nav-active">iBT</a>
@@ -30,11 +30,13 @@
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <a href="kontakt.html" class="btn btn-orange nav-cta">Termin anfragen</a>
-    <button class="burger" aria-label="Menü öffnen">
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<main id="main-content">
 
 <!-- HERO -->
 <section class="ibt-page-hero">
@@ -52,7 +54,7 @@
     <div class="ibt-hero-visual">
       <div class="ibt-hero-img-placeholder">
         <div class="ibt-hero-icon">
-          <svg width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">
+          <svg aria-hidden="true" width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24">
             <circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/>
             <path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/>
           </svg>
@@ -136,7 +138,7 @@
       <div class="wirkung-punkte">
         <div class="wirkung-punkt">
           <div class="wirkung-icon violet">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </div>
           <div>
             <strong>Bindungsmuster verstehen</strong>
@@ -145,7 +147,7 @@
         </div>
         <div class="wirkung-punkt">
           <div class="wirkung-icon violet">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <div>
             <strong>Emotionale Regulation stärken</strong>
@@ -154,7 +156,7 @@
         </div>
         <div class="wirkung-punkt">
           <div class="wirkung-icon violet">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
           </div>
           <div>
             <strong>Elternkompetenzen stärken</strong>
@@ -163,7 +165,7 @@
         </div>
         <div class="wirkung-punkt">
           <div class="wirkung-icon violet">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
           </div>
           <div>
             <strong>Neue Beziehungserfahrungen ermöglichen</strong>
@@ -172,7 +174,7 @@
         </div>
         <div class="wirkung-punkt">
           <div class="wirkung-icon violet">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
             <strong>Intergenerationale Muster durchbrechen</strong>
@@ -200,7 +202,7 @@
 
       <div class="fuerwen-card">
         <div class="fuerwen-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3>Eltern &amp; Familien</h3>
         <p>Eltern, die ihre Beziehung zu ihrem Kind stärken möchten, sich in Erziehungssituationen überfordert fühlen oder eigene Kindheitserfahrungen reflektieren wollen.</p>
@@ -208,7 +210,7 @@
 
       <div class="fuerwen-card">
         <div class="fuerwen-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
         </div>
         <h3>Kinder &amp; Jugendliche</h3>
         <p>Kinder und Jugendliche mit Verhaltensauffälligkeiten, emotionalen Schwierigkeiten, Bindungstraumata oder Erfahrungen von Vernachlässigung und Trennung.</p>
@@ -216,7 +218,7 @@
 
       <div class="fuerwen-card">
         <div class="fuerwen-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
         <h3>Pflege- &amp; Adoptivfamilien</h3>
         <p>Familien, die Kinder mit belastenden Vorgeschichten aufnehmen und verstehen möchten, warum bindungstraumatisierte Kinder so reagieren, wie sie reagieren.</p>
@@ -224,7 +226,7 @@
 
       <div class="fuerwen-card">
         <div class="fuerwen-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
         <h3>Familien in Trennungssituationen</h3>
         <p>Eltern, die sich trennen oder getrennt leben und verstehen möchten, wie sie trotz Konflikt eine gute Bindungsbasis für ihre Kinder aufrechterhalten können.</p>
@@ -232,7 +234,7 @@
 
       <div class="fuerwen-card">
         <div class="fuerwen-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3>Familien in Krisen</h3>
         <p>Familien, die unter hoher Belastung stehen – durch psychische Erkrankungen, Sucht, Armut oder andere destabilisierende Faktoren – und stabilisierende Begleitung brauchen.</p>
@@ -240,7 +242,7 @@
 
       <div class="fuerwen-card">
         <div class="fuerwen-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
         </div>
         <h3>Im Rahmen ambulanter Hilfen</h3>
         <p>iBT als methodischer Rahmen in SPFH, Erziehungsbeistandschaft oder Einzelbegleitung – besonders effektiv, wenn Bindungsthemen im Vordergrund stehen.</p>
@@ -426,15 +428,19 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <span class="logo-aufwind logo-white">Aufwind</span><span class="logo-dot logo-orange-dot">.</span>
+        <img src="logo_aufwind.png" alt="Aufwind – Systemische Familienhilfen" class="footer-logo-img">
       </div>
-      <p>Systemische Familienhilfen</p>
-      <p>Musterstraße 12 · 12345 Musterstadt</p>
+    </div>
+    <div class="footer-address">
+      <p>Musterstraße 12</p>
+      <p>12345 Musterstadt</p>
     </div>
     <div class="footer-contact">
       <p>📞 0123 4567890</p>
@@ -451,15 +457,16 @@
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.main-nav');
   burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-open');
+    const isOpen = nav.classList.toggle('nav-open');
     burger.classList.toggle('burger-open');
+    burger.setAttribute('aria-expanded', isOpen);
   });
 </script>
 
 
 <!-- SCROLL TO TOP -->
 <button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
-  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
 <script>

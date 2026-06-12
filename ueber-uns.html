@@ -12,17 +12,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
 <!-- HEADER / NAV -->
 <header class="header">
   <div class="container nav-inner">
     <div class="logo">
-      <a href="index.html" style="display:flex;align-items:baseline;gap:2px;text-decoration:none;">
-        <span class="logo-aufwind">Aufwind</span><span class="logo-dot">.</span>
+      <a href="index.html">
+        <img src="logo_kurz.png" alt="Aufwind – Systemische Familienhilfen" class="logo-img">
       </a>
-      <span class="logo-sub">Systemische Familienhilfen</span>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <a href="angebote.html">Angebote</a>
       <a href="ueber-uns.html" class="nav-active">Über uns</a>
       <a href="ibt.html">iBT</a>
@@ -30,11 +30,13 @@
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <a href="kontakt.html" class="btn btn-orange nav-cta">Termin anfragen</a>
-    <button class="burger" aria-label="Menü öffnen">
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<main id="main-content">
 
 <!-- HERO -->
 <section class="page-hero ueber-hero">
@@ -87,7 +89,7 @@
 
       <div class="team-card">
         <div class="team-photo-placeholder">
-          <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20v-1a8 8 0 0116 0v1"/></svg>
+          <svg aria-hidden="true" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20v-1a8 8 0 0116 0v1"/></svg>
           <small>Foto einfügen</small>
         </div>
         <div class="team-info">
@@ -119,7 +121,7 @@
 
       <div class="quali-card">
         <div class="quali-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         </div>
         <h3>Systemische Ausbildung</h3>
         <p>[Name des Instituts / der Ausbildung, Abschluss, Jahr] – zertifiziert nach [SG / DGSF / BVSC oder ähnlich, falls zutreffend].</p>
@@ -127,7 +129,7 @@
 
       <div class="quali-card">
         <div class="quali-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
         </div>
         <h3>Integrative Bindungstherapie (iBT)</h3>
         <p>Ausbildung in iBT – bindungstheoretisch fundierte Begleitung von Familien mit belastenden Bindungserfahrungen. <a href="ibt.html" class="quali-link">Mehr zur iBT →</a></p>
@@ -135,7 +137,7 @@
 
       <div class="quali-card">
         <div class="quali-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Traumasensible Begleitung</h3>
         <p>[Weiterbildung / Zusatzqualifikation in traumasensibler Pädagogik / Traumapädagogik – oder anpassen / entfernen falls nicht zutreffend].</p>
@@ -143,7 +145,7 @@
 
       <div class="quali-card">
         <div class="quali-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         </div>
         <h3>Grundstudium &amp; Berufserfahrung</h3>
         <p>[Studienabschluss, Hochschule, Jahr] – ergänzt durch [X] Jahre praktische Erfahrung in [z. B. ambulanter Jugendhilfe, Beratungsstellen, Kliniken, ASD etc.].</p>
@@ -151,7 +153,7 @@
 
       <div class="quali-card">
         <div class="quali-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <h3>Supervision &amp; Fortbildung</h3>
         <p>Regelmäßige Einzel- und Teamsupervision durch externe Fachkräfte sowie kontinuierliche Teilnahme an Fachfortbildungen.</p>
@@ -159,7 +161,7 @@
 
       <div class="quali-card">
         <div class="quali-icon">
-          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg aria-hidden="true" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
         <h3>Weitere Qualifikationen</h3>
         <p>[Weitere Zusatzausbildungen, Zertifikate, Spezialisierungen eintragen – z. B. Krisenintervention, Mediationsausbildung, Marte-Meo, etc.]</p>
@@ -176,37 +178,37 @@
     <h2 class="center-text ueber-haltung-heading">Was <span class="text-magenta">AUFWIND</span> bedeutet</h2>
     <p class="section-sub center-text">Jeder Buchstabe steht für einen Grundsatz unserer Arbeit.</p>
     <div class="aufwind-grid aufwind-grid-ueber">
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">A</span>
         <h4>Achtsame Haltung</h4>
         <p>Sensibler, respektvoller Umgang mit Bindungserfahrungen und Lebensrealitäten.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">U</span>
         <h4>Unterstützende Stabilisierung</h4>
         <p>Strukturierende, traumasensible Begleitung in Krisen und Belastungssituationen.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">F</span>
         <h4>Förderung sicherer Bindung</h4>
         <p>Stärkung der Eltern-Kind-Interaktion und elterlichen Feinfühligkeit.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">W</span>
         <h4>Würdigung von Ressourcen</h4>
         <p>Anerkennung bestehender Bewältigungs&shy;strategien und Kompetenzen.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">I</span>
         <h4>Inklusive Hilfeplanung</h4>
         <p>Berücksichtigung unterschiedlicher Perspektiven und individueller Bedarfe.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">N</span>
         <h4>Neue Perspektiven</h4>
         <p>Zirkuläres Denken im Familiensystem und Mehrgenerationen&shy;kontext.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">D</span>
         <h4>Dynamik &amp; Entwicklung</h4>
         <p>Förderung von Selbstwirksamkeit, Stabilisierung und Entwicklungs&shy;spielräumen.</p>
@@ -279,42 +281,42 @@
     <div class="werte-grid">
       <div class="werte-card">
         <div class="werte-icon magenta-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
         </div>
         <h3>Begegnung auf Augenhöhe</h3>
         <p>Wir begegnen allen Familien mit echtem Respekt – unabhängig von Herkunft, Lebensform oder Situation. Keine Familie ist ein „Fall".</p>
       </div>
       <div class="werte-card">
         <div class="werte-icon navy-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
         </div>
         <h3>Verlässlichkeit &amp; Verbindlichkeit</h3>
         <p>Wer mit uns arbeitet, kann sich auf uns verlassen. Wir halten Absprachen, sind erreichbar und kommunizieren offen – auch wenn es unbequem ist.</p>
       </div>
       <div class="werte-card">
         <div class="werte-icon violet-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
         <h3>Ressourcenorientierung</h3>
         <p>Wir glauben, dass jede Familie Stärken hat. Unsere Aufgabe ist es, diese zu entdecken und nutzbar zu machen – nicht Defizite zu verwalten.</p>
       </div>
       <div class="werte-card">
         <div class="werte-icon orange-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
         </div>
         <h3>Transparenz</h3>
         <p>Wir arbeiten nachvollziehbar. Familien und Auftraggeber wissen, was wir tun, warum wir es tun – und was wir voneinander brauchen.</p>
       </div>
       <div class="werte-card">
         <div class="werte-icon magenta-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Kindswohl als Kompass</h3>
         <p>In allem, was wir tun, steht das Wohl der Kinder im Mittelpunkt. Das ist kein Slogan – es ist die Grundlage jeder Entscheidung, die wir treffen.</p>
       </div>
       <div class="werte-card">
         <div class="werte-icon navy-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3>Kontinuierliche Entwicklung</h3>
         <p>Wir stehen still, wenn wir aufgehört haben zu fragen. Deshalb bilden wir uns fort, reflektieren in Supervision und bleiben neugierig auf neue Ansätze.</p>
@@ -334,15 +336,19 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <span class="logo-aufwind logo-white">Aufwind</span><span class="logo-dot logo-orange-dot">.</span>
+        <img src="logo_aufwind.png" alt="Aufwind – Systemische Familienhilfen" class="footer-logo-img">
       </div>
-      <p>Systemische Familienhilfen</p>
-      <p>Musterstraße 12 · 12345 Musterstadt</p>
+    </div>
+    <div class="footer-address">
+      <p>Musterstraße 12</p>
+      <p>12345 Musterstadt</p>
     </div>
     <div class="footer-contact">
       <p>📞 0123 4567890</p>
@@ -359,8 +365,9 @@
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.main-nav');
   burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-open');
+    const isOpen = nav.classList.toggle('nav-open');
     burger.classList.toggle('burger-open');
+    burger.setAttribute('aria-expanded', isOpen);
   });
 </script>
 

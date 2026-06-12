@@ -11,15 +11,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
 <!-- HEADER / NAV -->
 <header class="header">
   <div class="container nav-inner">
     <div class="logo">
-      <span class="logo-aufwind">Aufwind</span><span class="logo-dot">.</span>
-      <span class="logo-sub">Systemische Familienhilfen</span>
+      <a href="index.html">
+        <img src="logo_kurz.png" alt="Aufwind – Systemische Familienhilfen" class="logo-img">
+      </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <a href="angebote.html">Angebote</a>
       <a href="ueber-uns.html">Über uns</a>
       <a href="ibt.html">iBT</a>
@@ -27,11 +29,13 @@
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <a href="kontakt.html" class="btn btn-orange nav-cta">Termin anfragen</a>
-    <button class="burger" aria-label="Menü öffnen">
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<main id="main-content">
 
 <!-- HERO -->
 <section class="hero">
@@ -82,28 +86,28 @@
     <div class="icon-grid">
       <div class="icon-card">
         <div class="icon-circle">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-1a4 4 0 014-4h2"/><circle cx="17" cy="17" r="4"/><path d="M17 15v2l1 1"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-1a4 4 0 014-4h2"/><circle cx="17" cy="17" r="4"/><path d="M17 15v2l1 1"/></svg>
         </div>
         <h3>Systemisch denken</h3>
         <p>Zusammenhänge verstehen, Muster erkennen, tragfähige Lösungen gemeinsam entwickeln.</p>
       </div>
       <div class="icon-card">
         <div class="icon-circle">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
         <h3>Ressourcen stärken</h3>
         <p>Vorhandene Fähigkeiten entdecken und gezielt für die Veränderung nutzen.</p>
       </div>
       <div class="icon-card">
         <div class="icon-circle">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
         </div>
         <h3>Bindung fördern</h3>
         <p>Beziehungen stabilisieren und die Eltern-Kind-Interaktion nachhaltig stärken.</p>
       </div>
       <div class="icon-card">
         <div class="icon-circle">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Klar begleiten</h3>
         <p>Struktur und Orientierung geben – verlässlich im Alltag und in der Krise.</p>
@@ -119,37 +123,37 @@
     <h2 class="center-text">Was <span class="text-magenta">AUFWIND</span> bedeutet</h2>
     <p class="section-sub center-text">Jeder Buchstabe steht für einen Grundsatz unserer Arbeit.</p>
     <div class="aufwind-grid">
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">A</span>
         <h4>Achtsame Haltung</h4>
         <p>Sensibler, respektvoller Umgang mit Bindungserfahrungen und Lebensrealitäten.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">U</span>
         <h4>Unterstützende Stabilisierung</h4>
         <p>Strukturierende, traumasensible Begleitung in Krisen und Belastungssituationen.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">F</span>
         <h4>Förderung sicherer Bindung</h4>
         <p>Stärkung der Eltern-Kind-Interaktion und elterlichen Feinfühligkeit.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">W</span>
         <h4>Würdigung von Ressourcen</h4>
         <p>Anerkennung bestehender Bewältigungs&shy;strategien und Kompetenzen.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">I</span>
         <h4>Inklusive Hilfeplanung</h4>
         <p>Berücksichtigung unterschiedlicher Perspektiven und individueller Bedarfe.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">N</span>
         <h4>Neue Perspektiven</h4>
         <p>Zirkuläres Denken im Familiensystem und Mehrgenerationen&shy;kontext.</p>
       </div>
-      <div class="aufwind-card" tabindex="0">
+      <div class="aufwind-card" tabindex="0" role="button">
         <span class="aufwind-letter">D</span>
         <h4>Dynamik &amp; Entwicklung</h4>
         <p>Förderung von Selbstwirksamkeit, Stabilisierung und Entwicklungs&shy;spielräumen.</p>
@@ -166,37 +170,37 @@
     <div class="methoden-grid">
       <div class="methode-card">
         <div class="methode-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <span>Familien- &amp; Einzelgespräche</span>
       </div>
       <div class="methode-card">
         <div class="methode-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
         </div>
         <span>Genogramm- &amp; Biografiearbeit</span>
       </div>
       <div class="methode-card">
         <div class="methode-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
         </div>
         <span>Familienbrett &amp; Visualisierung</span>
       </div>
       <div class="methode-card">
         <div class="methode-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <span>Traumasensible Interventionen</span>
       </div>
       <div class="methode-card">
         <div class="methode-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
         <span>Aufsuchende Arbeit im Lebensumfeld</span>
       </div>
       <div class="methode-card">
         <div class="methode-icon">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
         <span>Krisenintervention</span>
       </div>
@@ -237,7 +241,7 @@
     <div class="ja-cards">
       <div class="ja-card">
         <div class="ja-card-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3>Zusammenarbeit</h3>
         <ul>
@@ -248,7 +252,7 @@
       </div>
       <div class="ja-card">
         <div class="ja-card-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3>Arbeitsweise</h3>
         <ul>
@@ -259,7 +263,7 @@
       </div>
       <div class="ja-card">
         <div class="ja-card-icon">
-          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          <svg aria-hidden="true" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
         </div>
         <h3>Qualität</h3>
         <ul>
@@ -291,14 +295,14 @@
     <div class="ibt-text">
       <div class="ibt-label">
         <div class="ibt-icon-wrap">
-          <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
+          <svg aria-hidden="true" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
         </div>
         <div>
           <h3 class="ibt-title">Integrative Bindungstherapie<br><em>(iBT)</em></h3>
         </div>
       </div>
       <p>Die iBT ist ein wissenschaftlich fundierter Ansatz zur Stärkung sicherer Bindung, Regulation und Beziehungskompetenz – besonders wirksam bei belastenden Bindungserfahrungen.</p>
-      <a href="ibt.html" class="link-arrow">Mehr zur iBT <span>→</span></a>
+      <a href="ibt.html" class="link-arrow" aria-label="Mehr zur integrativen Bindungstherapie erfahren">Mehr zur iBT <span aria-hidden="true">→</span></a>
     </div>
     <div class="ibt-image-wrap">
       <div class="ibt-img-placeholder">
@@ -319,11 +323,11 @@
       <p>Sie möchten einen Termin anfragen, mehr über unsere Angebote erfahren oder eine Zusammenarbeit besprechen? Schreiben Sie uns – wir melden uns zeitnah bei Ihnen.</p>
       <div class="kontakt-info">
         <div class="kontakt-info-item">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
           <span>0123 4567890</span>
         </div>
         <div class="kontakt-info-item">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <span>info@aufwind-familienhilfen.de</span>
         </div>
       </div>
@@ -378,11 +382,11 @@
 
         <button type="submit" class="btn btn-magenta form-submit">
           Nachricht senden
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
 
         <div class="form-success" id="formSuccess" style="display:none;">
-          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg aria-hidden="true" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
           Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen.
         </div>
       </form>
@@ -395,10 +399,12 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <span class="logo-aufwind logo-white">Aufwind</span><span class="logo-dot logo-orange-dot">.</span>
+        <img src="logo_aufwind.png" alt="Aufwind – Systemische Familienhilfen" class="footer-logo-img">
       </div>
-      <p>Systemische Familienhilfen</p>
-      <p>Musterstraße 12 · 12345 Musterstadt</p>
+    </div>
+    <div class="footer-address">
+      <p>Musterstraße 12</p>
+      <p>12345 Musterstadt</p>
     </div>
     <div class="footer-contact">
       <p>📞 0123 4567890</p>
@@ -416,15 +422,16 @@
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.main-nav');
   burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-open');
+    const isOpen = nav.classList.toggle('nav-open');
     burger.classList.toggle('burger-open');
+    burger.setAttribute('aria-expanded', isOpen);
   });
 </script>
 
 
 <!-- SCROLL TO TOP -->
 <button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
-  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
 <script>
