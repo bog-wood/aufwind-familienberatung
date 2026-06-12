@@ -2,7 +2,8 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aufwind – Systemische Familienhilfen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +20,13 @@
       <span class="logo-sub">Systemische Familienhilfen</span>
     </div>
     <nav class="main-nav">
-      <a href="#angebote">Angebote</a>
-      <a href="#ueber">Über uns</a>
-      <a href="#ibt">iBT</a>
-      <a href="#jugendaemter">Für Jugendämter</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="ibt.html">iBT</a>
+      <a href="jugendaemter.html">Für Jugendämter</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
-    <a href="#kontakt" class="btn btn-orange nav-cta">Termin anfragen</a>
+    <a href="kontakt.html" class="btn btn-orange nav-cta">Termin anfragen</a>
     <button class="burger" aria-label="Menü öffnen">
       <span></span><span></span><span></span>
     </button>
@@ -48,8 +49,8 @@
         Zusammenarbeit mit Jugendämtern und Institutionen.
       </p>
       <div class="hero-buttons">
-        <a href="#familien-detail" class="btn btn-magenta">Hilfe für Familien</a>
-        <a href="#jugendaemter-detail" class="btn btn-outline-magenta">Zusammenarbeit mit Jugendämtern</a>
+        <a href="angebote.html" class="btn btn-magenta">Hilfe für Familien</a>
+        <a href="jugendaemter.html" class="btn btn-outline-magenta">Zusammenarbeit mit Jugendämtern</a>
       </div>
     </div>
     <div class="hero-image-wrap">
@@ -136,7 +137,7 @@
       <div class="aufwind-card" tabindex="0">
         <span class="aufwind-letter">W</span>
         <h4>Würdigung von Ressourcen</h4>
-        <p>Anerkennung bestehender Bewältigungsstrategien und Kompetenzen.</p>
+        <p>Anerkennung bestehender Bewältigungs&shy;strategien und Kompetenzen.</p>
       </div>
       <div class="aufwind-card" tabindex="0">
         <span class="aufwind-letter">I</span>
@@ -146,12 +147,12 @@
       <div class="aufwind-card" tabindex="0">
         <span class="aufwind-letter">N</span>
         <h4>Neue Perspektiven</h4>
-        <p>Zirkuläres Denken im Familiensystem und Mehrgenerationenkontext.</p>
+        <p>Zirkuläres Denken im Familiensystem und Mehrgenerationen&shy;kontext.</p>
       </div>
       <div class="aufwind-card" tabindex="0">
         <span class="aufwind-letter">D</span>
         <h4>Dynamik &amp; Entwicklung</h4>
-        <p>Förderung von Selbstwirksamkeit, Stabilisierung und Entwicklungsspielräumen.</p>
+        <p>Förderung von Selbstwirksamkeit, Stabilisierung und Entwicklungs&shy;spielräumen.</p>
       </div>
     </div>
   </div>
@@ -222,7 +223,7 @@
         <li>Stärkung der Eltern-Kind-Beziehung</li>
         <li>Emotionale Entlastung</li>
       </ul>
-      <a href="#kontakt" class="btn btn-magenta">Mehr erfahren</a>
+      <a href="angebote.html" class="btn btn-magenta">Mehr erfahren</a>
     </div>
   </div>
 </section>
@@ -269,7 +270,7 @@
       </div>
     </div>
     <div class="center-btn">
-      <a href="#kontakt" class="btn btn-outline-white">Zusammenarbeit anfragen</a>
+      <a href="kontakt.html" class="btn btn-outline-white">Zusammenarbeit anfragen</a>
     </div>
   </div>
 </section>
@@ -280,6 +281,7 @@
     <p class="section-eyebrow center-text">UNSER ANSATZ</p>
     <h2>Familien als Expert:innen ihres eigenen Lebens.</h2>
     <p>Wir verstehen Familien als Expert:innen ihres eigenen Lebens. Unsere Aufgabe ist es, Prozesse zu strukturieren, Perspektiven zu erweitern und Entwicklung zu ermöglichen.</p>
+    <div style="margin-top:2rem;text-align:center;"><a href="ueber-uns.html" class="btn btn-outline-navy">Lerne unser Team kennen</a></div>
   </div>
 </section>
 
@@ -296,7 +298,7 @@
         </div>
       </div>
       <p>Die iBT ist ein wissenschaftlich fundierter Ansatz zur Stärkung sicherer Bindung, Regulation und Beziehungskompetenz – besonders wirksam bei belastenden Bindungserfahrungen.</p>
-      <a href="#" class="link-arrow">Mehr zur iBT <span>→</span></a>
+      <a href="ibt.html" class="link-arrow">Mehr zur iBT <span>→</span></a>
     </div>
     <div class="ibt-image-wrap">
       <div class="ibt-img-placeholder">
@@ -332,6 +334,8 @@
       <form class="kontakt-form" action="https://api.web3forms.com/submit" method="POST" id="kontaktFormular">
         <!-- API Key hier eintragen (von web3forms.com) -->
         <input type="hidden" name="access_key" value="DEIN-API-KEY-HIER">
+        <!-- Honeypot Anti-Spam: bleibt leer bei echten Nutzern -->
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
         <input type="hidden" name="subject" value="Neue Anfrage über aufwind-familienhilfen.de">
         <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
@@ -369,7 +373,7 @@
 
         <div class="form-check">
           <input type="checkbox" id="datenschutz" name="datenschutz" required>
-          <label for="datenschutz">Ich habe die <a href="#" class="form-link">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
+          <label for="datenschutz">Ich habe die <a href="datenschutz.html" class="form-link" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
         </div>
 
         <button type="submit" class="btn btn-magenta form-submit">
@@ -401,8 +405,8 @@
       <p>✉ info@aufwind-familienhilfen.de</p>
     </div>
     <div class="footer-links">
-      <a href="#">Impressum</a>
-      <a href="#">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
     </div>
   </div>
 </footer>
@@ -414,6 +418,22 @@
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-open');
     burger.classList.toggle('burger-open');
+  });
+</script>
+
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
+  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  const scrollBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('scroll-top-visible', window.scrollY > 300);
+  });
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
 
