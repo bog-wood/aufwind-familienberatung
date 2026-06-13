@@ -373,5 +373,20 @@
     burger.setAttribute('aria-expanded', isOpen);
   });
 </script>
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
+  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
 
-<
+<script>
+  const scrollBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('scroll-top-visible', window.scrollY > 300);
+  });
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
