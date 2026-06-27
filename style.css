@@ -207,6 +207,7 @@ p  { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1rem; color:
 }
 .main-nav.nav-open a { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--gray-light); }
 .main-nav.nav-open a:last-child { border-bottom: none; }
+.main-nav.nav-open a::after { display: none; }
 
 /* ===== HERO ===== */
 .hero {
@@ -2255,6 +2256,10 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
   .section-ueber-methoden,
   .section-ueber-werte { padding: 56px 0; }
 
+  .section-faq,
+  .section-cta,
+  .section-schritte { padding: 56px 0; }
+
   .ja-page-hero,
   .ibt-page-hero       { padding: 56px 0 48px; }
 
@@ -2267,6 +2272,7 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
   .trust-grid  { grid-template-columns: 1fr; }
   .ja-service-strip    { padding: 28px 0; }
   .aufwind-grid-ueber .aufwind-card { flex: 1 1 100%; }
+  .legal-block { padding: 20px 18px; }
 }
 
 /* ── LOGO IMAGE ─────────────────────────────────────────────── */
