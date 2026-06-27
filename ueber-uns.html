@@ -95,7 +95,6 @@
     <h2 class="center-text ueber-team-heading">Wer hinter Aufwind steht</h2>
     <div class="team-grid">
 
-      <div class="team-card">
         <div class="team-photo-placeholder">
           <svg aria-hidden="true" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20v-1a8 8 0 0116 0v1"/></svg>
           <small>Foto einfügen</small>
@@ -127,8 +126,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Weitere Teammitglieder hier nach gleichem Muster einfügen -->
 
     </div>
   </div>
@@ -330,6 +327,8 @@
   </div>
 </section>
 
+
+
 </main>
 
 <!-- FOOTER -->
@@ -339,21 +338,22 @@
       <div class="footer-logo">
         <img src="logo_aufwind.png" alt="Aufwind – Systemische Familienhilfen" class="footer-logo-img">
       </div>
-    </div>
-    <div class="footer-address">
-      <p>Musterstraße 12</p>
-      <p>12345 Musterstadt</p>
-    </div>
-    <div class="footer-contact">
+    </div>    <div class="footer-contact">
       <p>📞 0123 4567890</p>
       <p>✉ info@aufwind-familienhilfen.de</p>
     </div>
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="glossar.html">Glossar</a>
     </div>
   </div>
 </footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
+  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
 
 <script>
   const burger = document.querySelector('.burger');
@@ -363,13 +363,7 @@
     burger.classList.toggle('burger-open');
     burger.setAttribute('aria-expanded', isOpen);
   });
-</script>
-<!-- SCROLL TO TOP -->
-<button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
-  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
 
-<script>
   const scrollBtn = document.getElementById('scrollTop');
   window.addEventListener('scroll', () => {
     scrollBtn.classList.toggle('scroll-top-visible', window.scrollY > 300);

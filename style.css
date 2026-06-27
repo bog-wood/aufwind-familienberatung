@@ -1103,6 +1103,56 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
   transition: transform 0.2s;
 }
 .faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-pakete {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 4px 20px 16px;
+}
+.faq-paket {
+  border: none;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.faq-paket:nth-child(1) { background: rgba(217,74,155,0.08); }
+.faq-paket:nth-child(2) { background: rgba(139,111,207,0.1); }
+.faq-paket:nth-child(3) { background: rgba(249,115,22,0.08); }
+.faq-paket-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--navy);
+  margin-bottom: 4px !important;
+  border-top: none !important;
+  padding: 0 !important;
+}
+.faq-paket-preis {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--magenta);
+  margin-bottom: 6px !important;
+  border-top: none !important;
+  padding: 0 !important;
+}
+.faq-paket-preis span {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+.faq-paket-desc {
+  font-size: 0.82rem !important;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0 !important;
+  border-top: none !important;
+  padding: 0 !important;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+@media (max-width: 600px) {
+  .faq-pakete { grid-template-columns: 1fr; }
+}
 .faq-item p {
   padding: 0 20px 18px;
   font-size: 0.9rem;
@@ -1272,7 +1322,7 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
 }
 .footer-inner {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   gap: 48px;
   align-items: start;
 }
@@ -1288,8 +1338,10 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
 .footer-contact p { font-size: 0.88rem; color: var(--text-light); margin-bottom: 6px; }
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  align-items: center;
 }
 .footer-links a {
   font-size: 0.88rem;
@@ -1974,18 +2026,7 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
 .ueber-team-heading { color: var(--navy); margin-bottom: 2.5rem; }
 .team-grid {
   display: flex;
-  flex-direction: column;
-  gap: 28px;
-  max-width: 860px;
-  margin: 0 auto;
-}
-.team-card {
-  background: #fff;
-  border: 1px solid var(--gray-light);
-  border-radius: 20px;
-  padding: 36px;
-  display: flex;
-  gap: 40px;
+  gap: 48px;
   align-items: flex-start;
 }
 .team-photo-placeholder {
@@ -2165,7 +2206,7 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
   .ueber-hero-layout,
   .ueber-warum-layout,
   .ueber-methoden-layout { grid-template-columns: 1fr; gap: 40px; }
-  .team-grid           { grid-template-columns: 1fr; }
+  .team-grid           { flex-direction: column; }
   .quali-grid          { grid-template-columns: repeat(2, 1fr); }
   .werte-grid          { grid-template-columns: repeat(2, 1fr); }
   .methoden-liste      { grid-template-columns: 1fr; }
@@ -2186,7 +2227,6 @@ h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
   .ibt-step            { flex: 1 1 100%; }
 
   /* Über uns */
-  .team-card           { flex-direction: column; padding: 24px; gap: 24px; }
   .team-photo-placeholder { width: 100%; min-width: unset; aspect-ratio: 4 / 3; border-radius: 14px; }
   .quali-grid          { grid-template-columns: 1fr; }
   .werte-grid          { grid-template-columns: 1fr; }

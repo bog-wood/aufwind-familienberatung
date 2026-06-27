@@ -382,7 +382,7 @@
 
       <details class="faq-item">
         <summary>Was ist der Unterschied zwischen Beratung und Therapie?</summary>
-        <p>Beratung zielt auf konkrete Themen, Situationen und Lösungsstrategien im Alltag ab. Psychotherapie behandelt klinische Störungsbilder und erfordert eine Approbation. Systemische Familienberatung bewegt sich an der Schnittstelle: Sie ist tiefgründig und lösungsorientiert, aber kein Ersatz für psychiatrische oder psychotherapeutische Behandlung.</p>
+        <p>Beratung zielt auf konkrete Themen, Situationen und Lösungsstrategien im Alltag ab. Psychotherapie behandelt klinische Störungsbilder und erfordert eine Approbation. Systemische Familienberatung bewegt sich an der Schnittstelle: Sie ist tiefgründig und lösungsorientiert, aber kein Ersatz für psychiatrische oder psychotherapeutische Behandlung. Wir bieten keine Heilbehandlung an.</p>
       </details>
 
       <details class="faq-item">
@@ -397,7 +397,25 @@
 
       <details class="faq-item">
         <summary>Was kostet die Beratung?</summary>
-        <p>Das hängt von der Art des Angebots ab. Ambulante Hilfen zur Erziehung nach SGB VIII werden in der Regel vom Jugendamt finanziert. Für andere Leistungen sprechen Sie uns gerne direkt an – wir informieren Sie offen über anfallende Kosten und mögliche Kostenübernahmen.</p>
+        <p>Wir bieten drei Beratungspakete an, die sich nach Umfang und Intensität unterscheiden:</p>
+        <div class="faq-pakete">
+          <div class="faq-paket">
+            <p class="faq-paket-name">Aufwind Start</p>
+            <p class="faq-paket-preis">390 € <span>· ca. 4 Wochen</span></p>
+            <p class="faq-paket-desc">2 Sitzungen à 90 Minuten – für erste Orientierung, Entlastung und konkrete Anliegen.</p>
+          </div>
+          <div class="faq-paket">
+            <p class="faq-paket-name">Aufwind Entwicklung</p>
+            <p class="faq-paket-preis">890 € <span>· ca. 10–12 Wochen</span></p>
+            <p class="faq-paket-desc">Für nachhaltige Veränderung, Elternarbeit und die Bearbeitung wiederkehrender Familienthemen.</p>
+          </div>
+          <div class="faq-paket">
+            <p class="faq-paket-name">Aufwind Intensiv</p>
+            <p class="faq-paket-preis">1.590 € <span>· ca. 12 Wochen</span></p>
+            <p class="faq-paket-desc">Für Familien mit erhöhtem Unterstützungsbedarf und intensiver Begleitung im Alltag.</p>
+          </div>
+        </div>
+        <p>Einzeltermine sind ebenfalls möglich. Die genaue Empfehlung erfolgt nach einem kostenfreien Erstkontakt und richtet sich nach dem individuellen Bedarf Ihrer Familie.</p>
       </details>
 
       <details class="faq-item">
@@ -424,7 +442,6 @@
     </div>
   </div>
 </section>
-
 </main>
 
 <!-- FOOTER -->
@@ -434,21 +451,22 @@
       <div class="footer-logo">
         <img src="logo_aufwind.png" alt="Aufwind – Systemische Familienhilfen" class="footer-logo-img">
       </div>
-    </div>
-    <div class="footer-address">
-      <p>Musterstraße 12</p>
-      <p>12345 Musterstadt</p>
-    </div>
-    <div class="footer-contact">
+    </div>    <div class="footer-contact">
       <p>📞 0123 4567890</p>
       <p>✉ info@aufwind-familienhilfen.de</p>
     </div>
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="glossar.html">Glossar</a>
     </div>
   </div>
 </footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
+  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
 
 <script>
   const burger = document.querySelector('.burger');
@@ -458,15 +476,7 @@
     burger.classList.toggle('burger-open');
     burger.setAttribute('aria-expanded', isOpen);
   });
-</script>
 
-
-<!-- SCROLL TO TOP -->
-<button class="scroll-top" id="scrollTop" aria-label="Nach oben" title="Nach oben">
-  <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
-
-<script>
   const scrollBtn = document.getElementById('scrollTop');
   window.addEventListener('scroll', () => {
     scrollBtn.classList.toggle('scroll-top-visible', window.scrollY > 300);
