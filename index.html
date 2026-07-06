@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
   <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://api.web3forms.com; connect-src 'self' https://api.web3forms.com; frame-ancestors 'none'; base-uri 'self';">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aufwind – Systemische Familienhilfen</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="32x32" href="logo_kurz.png">
 <link rel="icon" type="image/png" sizes="16x16" href="logo_kurz.png">
 <link rel="apple-touch-icon" href="logo_kurz.png">
@@ -51,9 +51,7 @@
         <span class="h1-magenta">Aufwind</span><span class="h1-orange-dot">.</span>
       </h1>
       <p class="hero-sub">
-        Systemische Familienhilfe &amp; bindungsorientierte Begleitung
-        für Familien, Kinder und Jugendliche sowie verlässliche
-        Zusammenarbeit mit Jugendämtern und Institutionen.
+        Systemische Beratung &amp; bindungsorientierte Begleitung für Familien, Kinder und Jugendliche sowie verlässliche Zusammenarbeit mit Jugendämtern und Institutionen.
       </p>
       <div class="hero-buttons">
         <a href="familien.html" class="btn btn-magenta">Hilfe für Familien</a>
@@ -292,38 +290,14 @@
   </div>
 </section>
 
-<!-- IBT SECTION -->
-<section class="section-ibt" id="ibt">
-  <div class="container ibt-layout">
-    <div class="ibt-text">
-      <div class="ibt-label">
-        <div class="ibt-icon-wrap">
-          <svg aria-hidden="true" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 20v-1a6 6 0 016-6h6a6 6 0 016 6v1"/></svg>
-        </div>
-        <div>
-          <h3 class="ibt-title">Integrative Bindungsbasierte Traumatherapie<br><em>für Kinder und deren Eltern (iBT)</em></h3>
-        </div>
-      </div>
-      <p>Die iBT ist ein wissenschaftlich fundierter Ansatz zur Stärkung sicherer Bindung, Regulation und Beziehungskompetenz – besonders wirksam bei belastenden Bindungserfahrungen.</p>
-      <a href="ibt.html" class="link-arrow" aria-label="Mehr zur Integrativen Bindungsbasierten Traumatherapie für Kinder und deren Eltern erfahren">Mehr zur iBT <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="ibt-image-wrap">
-      <div class="ibt-img-placeholder">
-        <p>Bild iBT / Beratung</p>
-        <small>Hier eigenes Foto einfügen</small>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- KONTAKT / FORMULAR -->
 <section class="section-kontakt" id="kontakt">
   <div class="container kontakt-layout">
 
     <div class="kontakt-intro">
       <p class="section-eyebrow">KONTAKT</p>
-      <h2>Wir freuen uns auf Ihre Nachricht.</h2>
-      <p>Sie möchten einen Termin anfragen, mehr über unsere Angebote erfahren oder eine Zusammenarbeit besprechen? Schreiben Sie uns – wir melden uns zeitnah bei Ihnen.</p>
+      <h2>Wie können wir Sie unterstützen?</h2>
+      <p>Vielen Dank für Ihr Interesse an Aufwind Familienberatung. Nutzen Sie dieses Formular für Beratungsanfragen, Fragen zu unseren Angeboten, Rückmeldungen oder Feedback. Ihr Anliegen wird vertraulich behandelt und zeitnah bearbeitet.</p>
       <div class="kontakt-info">
         <div class="kontakt-info-item">
           <svg aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -337,45 +311,75 @@
     </div>
 
     <div class="kontakt-form-wrap">
-      <!-- Web3Forms: Kostenlosen API-Key anfordern auf web3forms.com -->
-      <form class="kontakt-form" action="https://api.web3forms.com/submit" method="POST" id="kontaktFormular">
-        <!-- API Key hier eintragen (von web3forms.com) -->
+      <form class="kontakt-form" id="kontaktFormular" novalidate>
         <input type="hidden" name="access_key" value="DEIN-API-KEY-HIER">
-        <!-- Honeypot Anti-Spam: bleibt leer bei echten Nutzern -->
-        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
         <input type="hidden" name="subject" value="Neue Anfrage über aufwind-familienhilfen.de">
-        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
 
         <div class="form-row form-row-2">
           <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">E-Mail *</label>
-            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
-          </div>
-        </div>
-
-        <div class="form-row form-row-2">
-          <div class="form-group">
-            <label for="telefon">Telefon</label>
-            <input type="tel" id="telefon" name="telefon" placeholder="Optional">
-          </div>
-          <div class="form-group">
-            <label for="betreff">Betreff *</label>
-            <select id="betreff" name="betreff" required>
+            <label for="wer_schreibt" class="form-section-label">Wer schreibt uns?</label>
+            <select id="wer_schreibt" name="Wer schreibt" required>
               <option value="" disabled selected>Bitte wählen …</option>
-              <option value="Termin anfragen">Termin anfragen</option>
-              <option value="Kooperation / Jugendamt">Kooperation / Jugendamt</option>
-              <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+              <option value="Privatperson / Familie">Privatperson / Familie</option>
+              <option value="Jugendamt">Jugendamt</option>
+              <option value="Netzwerkpartner:in">Netzwerkpartner:in</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="worum" class="form-section-label">Worum geht es?</label>
+            <select id="worum" name="Worum geht es">
+              <option value="" disabled selected>Bitte wählen …</option>
+              <option value="Anfrage systemische Beratung">Anfrage systemische Beratung</option>
+              <option value="Frage zum Angebot">Frage zum Angebot</option>
+              <option value="Fallübernahme HzE">Fallübernahme HzE</option>
+              <option value="Beschwerde">Beschwerde</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Lob">Lob</option>
+              <option value="Sonstiges Anliegen">Sonstiges Anliegen</option>
             </select>
           </div>
         </div>
 
+        <p class="form-section-label">Kontaktdaten</p>
+
+        <div class="form-flags-row">
+          <label class="form-option-label">
+            <input type="checkbox" id="anonCheck">
+            <span class="form-option-indicator form-cb-indicator"></span>
+            <span>Ich möchte anonym schreiben</span>
+          </label>
+          <label class="form-option-label">
+            <input type="checkbox" id="rueckmeldungCheck" name="Rückmeldung gewünscht" value="Ja" checked>
+            <span class="form-option-indicator form-cb-indicator"></span>
+            <span>Ich wünsche eine Rückmeldung</span>
+          </label>
+        </div>
+
+        <div id="kontaktFelder">
+          <div class="form-row form-row-2">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+            </div>
+          </div>
+          <div class="form-row form-row-2">
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="Optional">
+            </div>
+          </div>
+        </div>
+
         <div class="form-group">
-          <label for="nachricht">Nachricht *</label>
-          <textarea id="nachricht" name="nachricht" rows="5" placeholder="Wie können wir Ihnen helfen?" required></textarea>
+          <label for="nachricht" class="form-section-label">Ihr Anliegen *</label>
+          <p class="form-helper-text">Beschreiben Sie Ihr Anliegen, Ihre Frage oder Ihren Unterstützungsbedarf.</p>
+          <textarea id="nachricht" name="nachricht" rows="5" placeholder="Bitte keine sensiblen oder vertraulichen Informationen (z. B. Diagnosen) eintragen." required></textarea>
         </div>
 
         <div class="form-check">
@@ -383,14 +387,19 @@
           <label for="datenschutz">Ich habe die <a href="datenschutz.html" class="form-link" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</label>
         </div>
 
-        <button type="submit" class="btn btn-magenta form-submit">
-          Nachricht senden
-          <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <button type="submit" class="btn btn-orange form-submit" id="submitBtn">
+          <span id="submitLabel">Anliegen senden</span>
+          <svg aria-hidden="true" id="submitIcon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <svg aria-hidden="true" id="submitSpinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;animation:spin 1s linear infinite;"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
         </button>
 
-        <div class="form-success" id="formSuccess" style="display:none;">
+        <div class="form-success" id="formSuccess" style="display:none;" role="alert">
           <svg aria-hidden="true" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-          Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen.
+          <div><strong>Nachricht gesendet!</strong><br>Vielen Dank – wir melden uns innerhalb von 1–2 Werktagen bei Ihnen.</div>
+        </div>
+        <div class="form-error" id="formError" style="display:none;" role="alert">
+          <svg aria-hidden="true" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div><strong>Fehler beim Senden.</strong><br>Bitte versuchen Sie es erneut oder schreiben Sie uns direkt per E-Mail.</div>
         </div>
       </form>
     </div>
@@ -416,6 +425,10 @@
   </div>
 </footer>
 
+<style>
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+
 <script>
   // Mobile Burger Menu
   const burger = document.querySelector('.burger');
@@ -424,6 +437,68 @@
     const isOpen = nav.classList.toggle('nav-open');
     burger.classList.toggle('burger-open');
     burger.setAttribute('aria-expanded', isOpen);
+  });
+
+  // --- Anonym ↔ Rückmeldung: gegenseitig ausschließend ---
+  const anonCheck = document.getElementById('anonCheck');
+  const rueckmeldungCheck = document.getElementById('rueckmeldungCheck');
+  const kontaktFelder = document.getElementById('kontaktFelder');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+
+  function setAnon(on) {
+    if (on) {
+      kontaktFelder.style.display = 'none';
+      nameInput.removeAttribute('required');
+      emailInput.removeAttribute('required');
+      rueckmeldungCheck.checked = false;
+    } else {
+      kontaktFelder.style.display = 'flex';
+      nameInput.setAttribute('required', '');
+      emailInput.setAttribute('required', '');
+    }
+  }
+  anonCheck.addEventListener('change', function () { setAnon(this.checked); });
+  rueckmeldungCheck.addEventListener('change', function () {
+    if (this.checked) { anonCheck.checked = false; setAnon(false); }
+  });
+
+  // --- AJAX Formular ---
+  const form = document.getElementById('kontaktFormular');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitLabel = document.getElementById('submitLabel');
+  const submitIcon = document.getElementById('submitIcon');
+  const submitSpinner = document.getElementById('submitSpinner');
+  const formSuccess = document.getElementById('formSuccess');
+  const formError = document.getElementById('formError');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitLabel.textContent = 'Wird gesendet …';
+    submitIcon.style.display = 'none';
+    submitSpinner.style.display = 'inline';
+    formSuccess.style.display = 'none';
+    formError.style.display = 'none';
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST', body: new FormData(form)
+      });
+      const data = await response.json();
+      if (data.success) {
+        formSuccess.style.display = 'flex';
+        form.reset();
+        setAnon(false);
+        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else { throw new Error(); }
+    } catch {
+      formError.style.display = 'flex';
+    } finally {
+      submitBtn.disabled = false;
+      submitLabel.textContent = 'Anliegen senden';
+      submitIcon.style.display = 'inline';
+      submitSpinner.style.display = 'none';
+    }
   });
 </script>
 
@@ -445,3 +520,4 @@
 
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
